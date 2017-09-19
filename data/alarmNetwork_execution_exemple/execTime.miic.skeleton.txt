@@ -1,0 +1,2 @@
+init	iter	initIter	initIterSave
+0.054144	0	0	0.004693

@@ -1,0 +1,2019 @@
+<graph label="Cytoscape Web" directed="1" Graphic="1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cy="http://www.cytoscape.org" xmlns="http://www.cs.rpi.edu/XGMML">
+  <att name="documentVersion" value="0.1"/>
+  <att type="string" name="backgroundColor" value="#ffffff"/>
+  <att type="real" name="GRAPH_VIEW_ZOOM" value="1"/>
+  <att type="real" name="GRAPH_VIEW_CENTER_X" value="732.75"/>
+  <att type="real" name="GRAPH_VIEW_CENTER_Y" value="344.2"/>
+  <node id="MC1R" label="MC1R">
+    <att name="Eccentricity out" type="string" value="11"/>
+    <att name="Betweenness weighted" type="string" value="100"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0303810504634"/>
+    <att name="Betweenness unweighted" type="string" value="110.5"/>
+    <att name="Activates" type="string" value="1"/>
+    <att name="Entropy weighted" type="string" value="0.863897015901"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0326547806714"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0260255844729"/>
+    <att name="Total degree" type="string" value="2"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="1"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="8"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0272301764383"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="1"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="328.65" y="342.35" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="CDKN2A" label="CDKN2A">
+    <att name="Eccentricity out" type="string" value="7"/>
+    <att name="Betweenness weighted" type="string" value="256"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.03052250388"/>
+    <att name="Betweenness unweighted" type="string" value="186"/>
+    <att name="Activates" type="string" value="1"/>
+    <att name="Entropy weighted" type="string" value="0.969000817945"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0326580588091"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0260141093474"/>
+    <att name="Total degree" type="string" value="3"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="1"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="10"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0272498203003"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="2"/>
+    <att name="Activated" type="string" value="2"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="222.75" y="205.1" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="CDKN1A" label="CDKN1A">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="918.5" y="18.5" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="TP53" label="TP53">
+    <att name="Eccentricity out" type="string" value="6"/>
+    <att name="Betweenness weighted" type="string" value="313"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0309224318658"/>
+    <att name="Betweenness unweighted" type="string" value="310"/>
+    <att name="Activates" type="string" value="1"/>
+    <att name="Entropy weighted" type="string" value="0.923219205637"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0326746324411"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0262338817252"/>
+    <att name="Total degree" type="string" value="4"/>
+    <att name="Inhibits" type="string" value="1"/>
+    <att name="Out degree" type="string" value="2"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="7"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0272460633474"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="2"/>
+    <att name="Activated" type="string" value="2"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="235" y="328.25" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="CDK4" label="CDK4">
+    <att name="Eccentricity out" type="string" value="5"/>
+    <att name="Betweenness weighted" type="string" value="178"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0315002669514"/>
+    <att name="Betweenness unweighted" type="string" value="158"/>
+    <att name="Activates" type="string" value="6"/>
+    <att name="Entropy weighted" type="string" value="0.938449226127"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0327207716404"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0255854293148"/>
+    <att name="Total degree" type="string" value="7"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="6"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="10"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0272117788627"/>
+    <att name="Inhibited" type="string" value="1"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="298.65" y="277.3" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="MDM2" label="MDM2">
+    <att name="Eccentricity out" type="string" value="11"/>
+    <att name="Betweenness weighted" type="string" value="43"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0292949354518"/>
+    <att name="Betweenness unweighted" type="string" value="43"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="0.494591083041"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0325553449181"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0254200775528"/>
+    <att name="Total degree" type="string" value="2"/>
+    <att name="Inhibits" type="string" value="1"/>
+    <att name="Out degree" type="string" value="1"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="11"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0272151074528"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="1"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="357.15" y="146.55" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="MITF" label="MITF">
+    <att name="Eccentricity out" type="string" value="12"/>
+    <att name="Betweenness weighted" type="string" value="194"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0300560366786"/>
+    <att name="Betweenness unweighted" type="string" value="118.5"/>
+    <att name="Activates" type="string" value="1"/>
+    <att name="Entropy weighted" type="string" value="0.85306579722"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0326531688244"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0263392857143"/>
+    <att name="Total degree" type="string" value="3"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="1"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="7"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0272634918283"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="2"/>
+    <att name="Activated" type="string" value="2"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="93.45" y="414.4" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="ATF2" label="ATF2">
+    <att name="Eccentricity out" type="string" value="9"/>
+    <att name="Betweenness weighted" type="string" value="55"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0299188640974"/>
+    <att name="Betweenness unweighted" type="string" value="55"/>
+    <att name="Activates" type="string" value="1"/>
+    <att name="Entropy weighted" type="string" value="0.832605967685"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0326340525877"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0250957039558"/>
+    <att name="Total degree" type="string" value="2"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="1"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="13"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0271734674536"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="1"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="305.9" y="24.65" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="BRAF" label="BRAF">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="224.5" y="669.85" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="MAP2K1" label="MAP2K1">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="970" y="18.5" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="MAPK1" label="MAPK1">
+    <att name="Eccentricity out" type="string" value="11"/>
+    <att name="Betweenness weighted" type="string" value="73"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.029797979798"/>
+    <att name="Betweenness unweighted" type="string" value="76"/>
+    <att name="Activates" type="string" value="1"/>
+    <att name="Entropy weighted" type="string" value="0.945049760047"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0326181986553"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0259226713533"/>
+    <att name="Total degree" type="string" value="2"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="1"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="10"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0271867834959"/>
+    <att name="Inhibited" type="string" value="1"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="296.45" y="632.85" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="BCL2" label="BCL2">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="261.5" y="669.85" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="CDK2" label="CDK2">
+    <att name="Eccentricity out" type="string" value="11"/>
+    <att name="Betweenness weighted" type="string" value="200"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0304437564499"/>
+    <att name="Betweenness unweighted" type="string" value="124.5"/>
+    <att name="Activates" type="string" value="2"/>
+    <att name="Entropy weighted" type="string" value="0.779072415027"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0326569000234"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0261177512174"/>
+    <att name="Total degree" type="string" value="3"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="2"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="8"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0272617154715"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="1"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="134.4" y="365.35" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="GLI1" label="GLI1">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="298.5" y="669.85" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="GLI2" label="GLI2">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="335.5" y="669.85" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="POU3F2" label="POU3F2">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="1020.5" y="18.5" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="TGFB1" label="TGFB1">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="1444" y="18.5" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="TGFB2" label="TGFB2">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="Inf"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0259911894273"/>
+    <att name="Total degree" type="string" value="1"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="11"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0279802727295"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="1"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="398.5" y="214.05" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="TGFB3" label="TGFB3">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="21.5" y="669.85" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="LEFTY2" label="LEFTY2">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="1168.5" y="18.5" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="NOTCH1" label="NOTCH1">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0265407107512"/>
+    <att name="Total degree" type="string" value="1"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="9"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0280089198189"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="1"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="26.5" y="351.75" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="WNT1" label="WNT1">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="186.5" y="669.85" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="WNT3A" label="WNT3A">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="1310.5" y="18.5" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="WNT5A" label="WNT5A">
+    <att name="Eccentricity out" type="string" value="8"/>
+    <att name="Betweenness weighted" type="string" value="22"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0303967027306"/>
+    <att name="Betweenness unweighted" type="string" value="104"/>
+    <att name="Activates" type="string" value="1"/>
+    <att name="Entropy weighted" type="string" value="0.967726748987"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0325791510767"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0260255844729"/>
+    <att name="Total degree" type="string" value="2"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="1"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="10"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0272494381063"/>
+    <att name="Inhibited" type="string" value="1"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="279.65" y="520.05" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="KLF6" label="KLF6">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0259911894273"/>
+    <att name="Total degree" type="string" value="1"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="11"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0279786773207"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="1"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="423.5" y="283.55" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="PTEN" label="PTEN">
+    <att name="Eccentricity out" type="string" value="10"/>
+    <att name="Betweenness weighted" type="string" value="79"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.030163599182"/>
+    <att name="Betweenness unweighted" type="string" value="82"/>
+    <att name="Activates" type="string" value="1"/>
+    <att name="Entropy weighted" type="string" value="0.447138170273"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0326579594456"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0257192676548"/>
+    <att name="Total degree" type="string" value="2"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="1"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="11"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0271659738778"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="1"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="219.45" y="578.35" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="MCAM" label="MCAM">
+    <att name="Eccentricity out" type="string" value="10"/>
+    <att name="Betweenness weighted" type="string" value="75"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0302874743326"/>
+    <att name="Betweenness unweighted" type="string" value="85.5"/>
+    <att name="Activates" type="string" value="2"/>
+    <att name="Entropy weighted" type="string" value="0.915581195016"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0.15812525708"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0326254222526"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0261293179805"/>
+    <att name="Total degree" type="string" value="5"/>
+    <att name="Inhibits" type="string" value="1"/>
+    <att name="Out degree" type="string" value="3"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0.1"/>
+    <att name="Eccentricity in" type="string" value="8"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0272681805661"/>
+    <att name="Inhibited" type="string" value="1"/>
+    <att name="In degree" type="string" value="2"/>
+    <att name="Activated" type="string" value="1"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="144.05" y="494.65" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="GRIN2A" label="GRIN2A">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="1216.5" y="18.5" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="NRAS" label="NRAS">
+    <att name="Eccentricity out" type="string" value="8"/>
+    <att name="Betweenness weighted" type="string" value="259"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0302409021015"/>
+    <att name="Betweenness unweighted" type="string" value="189"/>
+    <att name="Activates" type="string" value="2"/>
+    <att name="Entropy weighted" type="string" value="0.932326742118"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0326486831112"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.02608311229"/>
+    <att name="Total degree" type="string" value="4"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="2"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="9"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0272470153878"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="2"/>
+    <att name="Activated" type="string" value="2"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="242.55" y="105" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="KIT" label="KIT">
+    <att name="Eccentricity out" type="string" value="10"/>
+    <att name="Betweenness weighted" type="string" value="380"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0307612095933"/>
+    <att name="Betweenness unweighted" type="string" value="308.5"/>
+    <att name="Activates" type="string" value="2"/>
+    <att name="Entropy weighted" type="string" value="0.935817578958"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0.0383810717393"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0326634718055"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0262923351159"/>
+    <att name="Total degree" type="string" value="8"/>
+    <att name="Inhibits" type="string" value="2"/>
+    <att name="Out degree" type="string" value="4"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0.0357142857143"/>
+    <att name="Eccentricity in" type="string" value="7"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0272700112465"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="4"/>
+    <att name="Activated" type="string" value="4"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="273.3" y="392.8" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="AKT3" label="AKT3">
+    <att name="Eccentricity out" type="string" value="10"/>
+    <att name="Betweenness weighted" type="string" value="49"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0296036126443"/>
+    <att name="Betweenness unweighted" type="string" value="49"/>
+    <att name="Activates" type="string" value="1"/>
+    <att name="Entropy weighted" type="string" value="0.921808695689"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0325792547068"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0252568493151"/>
+    <att name="Total degree" type="string" value="2"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="1"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="12"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0272028521057"/>
+    <att name="Inhibited" type="string" value="1"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="385.7" y="56.8" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="CYP2D6" label="CYP2D6">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="1070.5" y="18.5" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="GSTM1" label="GSTM1">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0265526552655"/>
+    <att name="Total degree" type="string" value="1"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="9"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0280366923139"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="1"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="69.8" y="569" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="CCND1" label="CCND1">
+    <att name="Eccentricity out" type="string" value="11"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0298582995951"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="1"/>
+    <att name="Entropy weighted" type="string" value="0.741854054816"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0.547877073369"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0326006832571"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0261293179805"/>
+    <att name="Total degree" type="string" value="3"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="1"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0.333333333333"/>
+    <att name="Eccentricity in" type="string" value="8"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0272697701011"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="2"/>
+    <att name="Activated" type="string" value="2"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="218.85" y="497.25" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="MYC" label="MYC">
+    <att name="Eccentricity out" type="string" value="9"/>
+    <att name="Betweenness weighted" type="string" value="203"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0305383022774"/>
+    <att name="Betweenness unweighted" type="string" value="203"/>
+    <att name="Activates" type="string" value="1"/>
+    <att name="Entropy weighted" type="string" value="0.859197437231"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0326539940495"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0262338817252"/>
+    <att name="Total degree" type="string" value="5"/>
+    <att name="Inhibits" type="string" value="1"/>
+    <att name="Out degree" type="string" value="2"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="9"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0272615852286"/>
+    <att name="Inhibited" type="string" value="1"/>
+    <att name="In degree" type="string" value="3"/>
+    <att name="Activated" type="string" value="2"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="209.5" y="438.3" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="FGF2" label="FGF2">
+    <att name="Eccentricity out" type="string" value="7"/>
+    <att name="Betweenness weighted" type="string" value="28"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0307772561294"/>
+    <att name="Betweenness unweighted" type="string" value="110"/>
+    <att name="Activates" type="string" value="2"/>
+    <att name="Entropy weighted" type="string" value="0.946544571707"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0326197157716"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0258205689278"/>
+    <att name="Total degree" type="string" value="3"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="2"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="11"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0272278842536"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="1"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="317.7" y="450.55" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="CXCL1" label="CXCL1">
+    <att name="Eccentricity out" type="string" value="9"/>
+    <att name="Betweenness weighted" type="string" value="169"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0298734177215"/>
+    <att name="Betweenness unweighted" type="string" value="99"/>
+    <att name="Activates" type="string" value="1"/>
+    <att name="Entropy weighted" type="string" value="0.999672058839"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0326155259393"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.02608311229"/>
+    <att name="Total degree" type="string" value="2"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="1"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="8"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0272531719619"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="1"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="276.45" y="212.75" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="FOXP3" label="FOXP3">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="1400.5" y="18.5" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="RUNX1" label="RUNX1">
+    <att name="Eccentricity out" type="string" value="13"/>
+    <att name="Betweenness weighted" type="string" value="103"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0293532338308"/>
+    <att name="Betweenness unweighted" type="string" value="91"/>
+    <att name="Activates" type="string" value="3"/>
+    <att name="Entropy weighted" type="string" value="0.900475496731"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0324789275827"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0261061946903"/>
+    <att name="Total degree" type="string" value="4"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="3"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="8"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.027266823439"/>
+    <att name="Inhibited" type="string" value="1"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="425.5" y="494.3" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="RUNX2" label="RUNX2">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0265287769784"/>
+    <att name="Total degree" type="string" value="1"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="9"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0280266628409"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="1"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="495.8" y="573.35" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="RUNX3" label="RUNX3">
+    <att name="Eccentricity out" type="string" value="11"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.03125"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="1"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0337769148733"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="1"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="1"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="397.8" y="393.5" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="RUNX1T1" label="RUNX1T1">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="863.5" y="18.5" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="BCL6" label="BCL6">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0265287769784"/>
+    <att name="Total degree" type="string" value="1"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="9"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0280245758596"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="1"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="530.15" y="483.8" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="PPARG" label="PPARG">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="1356" y="18.5" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="STAT1" label="STAT1">
+    <att name="Eccentricity out" type="string" value="7"/>
+    <att name="Betweenness weighted" type="string" value="196"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0308254963427"/>
+    <att name="Betweenness unweighted" type="string" value="182.5"/>
+    <att name="Activates" type="string" value="2"/>
+    <att name="Entropy weighted" type="string" value="0.912579096594"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0326989650406"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0260141093474"/>
+    <att name="Total degree" type="string" value="3"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="2"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="8"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0272237209942"/>
+    <att name="Inhibited" type="string" value="1"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="123.05" y="309.75" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="STAT2" label="STAT2">
+    <att name="Eccentricity out" type="string" value="6"/>
+    <att name="Betweenness weighted" type="string" value="172"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0310853530032"/>
+    <att name="Betweenness unweighted" type="string" value="152"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="0.999999349928"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0327090781615"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0257979886314"/>
+    <att name="Total degree" type="string" value="2"/>
+    <att name="Inhibits" type="string" value="1"/>
+    <att name="Out degree" type="string" value="1"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="9"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0272177566413"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="1"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="171.8" y="244.3" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="STAT3" label="STAT3">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="147" y="669.85" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="STAT5A" label="STAT5A">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="1264" y="18.5" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="STAT5B" label="STAT5B">
+    <att name="Eccentricity out" type="string" value="12"/>
+    <att name="Betweenness weighted" type="string" value="67"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0294411177645"/>
+    <att name="Betweenness unweighted" type="string" value="70"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="0.993045156788"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0325418827482"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0261293179805"/>
+    <att name="Total degree" type="string" value="3"/>
+    <att name="Inhibits" type="string" value="1"/>
+    <att name="Out degree" type="string" value="1"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="9"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.027228113958"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="2"/>
+    <att name="Activated" type="string" value="2"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="358.25" y="555.4" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="ZBTB7A" label="ZBTB7A">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="1120" y="18.5" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="GATA4" label="GATA4">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0265049415993"/>
+    <att name="Total degree" type="string" value="1"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="10"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0279828704814"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="1"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="189.4" y="18.5" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="GATA3" label="GATA3">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="64" y="669.85" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="GATA6" label="GATA6">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="106" y="669.85" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="X01" label="X01">
+    <att name="Eccentricity out" type="string" value="3"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0178355501814"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="1"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0178783081966"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0178355501814"/>
+    <att name="Total degree" type="string" value="2"/>
+    <att name="Inhibits" type="string" value="1"/>
+    <att name="Out degree" type="string" value="1"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="3"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0178783081966"/>
+    <att name="Inhibited" type="string" value="1"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="567.15" y="18.5" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="X02" label="X02">
+    <att name="Eccentricity out" type="string" value="2"/>
+    <att name="Betweenness weighted" type="string" value="6"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0178517397882"/>
+    <att name="Betweenness unweighted" type="string" value="6"/>
+    <att name="Activates" type="string" value="1"/>
+    <att name="Entropy weighted" type="string" value="0.603518538742"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0.389451685724"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0178783324704"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0178517397882"/>
+    <att name="Total degree" type="string" value="6"/>
+    <att name="Inhibits" type="string" value="2"/>
+    <att name="Out degree" type="string" value="3"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0.0666666666667"/>
+    <att name="Eccentricity in" type="string" value="2"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0178783324704"/>
+    <att name="Inhibited" type="string" value="2"/>
+    <att name="In degree" type="string" value="3"/>
+    <att name="Activated" type="string" value="1"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="643.5" y="60.4" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="X03" label="X03">
+    <att name="Eccentricity out" type="string" value="2"/>
+    <att name="Betweenness weighted" type="string" value="6"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0178517397882"/>
+    <att name="Betweenness unweighted" type="string" value="6"/>
+    <att name="Activates" type="string" value="1"/>
+    <att name="Entropy weighted" type="string" value="0.68100464865"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0.388333059555"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0178784549011"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0178517397882"/>
+    <att name="Total degree" type="string" value="6"/>
+    <att name="Inhibits" type="string" value="2"/>
+    <att name="Out degree" type="string" value="3"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0.0666666666667"/>
+    <att name="Eccentricity in" type="string" value="2"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0178784549011"/>
+    <att name="Inhibited" type="string" value="2"/>
+    <att name="In degree" type="string" value="3"/>
+    <att name="Activated" type="string" value="1"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="730.8" y="74.3" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="X04" label="X04">
+    <att name="Eccentricity out" type="string" value="3"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0178355501814"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="1"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0178784390103"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0178355501814"/>
+    <att name="Total degree" type="string" value="2"/>
+    <att name="Inhibits" type="string" value="1"/>
+    <att name="Out degree" type="string" value="1"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0"/>
+    <att name="Eccentricity in" type="string" value="3"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0178784390103"/>
+    <att name="Inhibited" type="string" value="1"/>
+    <att name="In degree" type="string" value="1"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="816" y="56.55" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="X05" label="X05">
+    <att name="Eccentricity out" type="string" value="2"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0178463399879"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="0.834778372799"/>
+    <att name="Local clustering coefficient weighted" type="string" value="0.666666666667"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0178783974913"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0178463399879"/>
+    <att name="Total degree" type="string" value="4"/>
+    <att name="Inhibits" type="string" value="2"/>
+    <att name="Out degree" type="string" value="2"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="0.166666666667"/>
+    <att name="Eccentricity in" type="string" value="2"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0178783974913"/>
+    <att name="Inhibited" type="string" value="2"/>
+    <att name="In degree" type="string" value="2"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="675.55" y="139.5" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="X06" label="X06">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="372.5" y="669.85" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <node id="X07" label="X07">
+    <att name="Eccentricity out" type="string" value="0"/>
+    <att name="Betweenness weighted" type="string" value="0"/>
+    <att name="Closeness centrality out unweighted" type="string" value="0.0166666666667"/>
+    <att name="Betweenness unweighted" type="string" value="0"/>
+    <att name="Activates" type="string" value="0"/>
+    <att name="Entropy weighted" type="string" value="NaN"/>
+    <att name="Local clustering coefficient weighted" type="string" value="NaN"/>
+    <att name="Closeness centrality out weighted" type="string" value="0.0166666666667"/>
+    <att name="Closeness centrality in unweighted" type="string" value="0.0166666666667"/>
+    <att name="Total degree" type="string" value="0"/>
+    <att name="Inhibits" type="string" value="0"/>
+    <att name="Out degree" type="string" value="0"/>
+    <att name="Local clustering coefficient unweighted" type="string" value="NaN"/>
+    <att name="Eccentricity in" type="string" value="0"/>
+    <att name="Closeness centrality in weighted" type="string" value="0.0166666666667"/>
+    <att name="Inhibited" type="string" value="0"/>
+    <att name="In degree" type="string" value="0"/>
+    <att name="Activated" type="string" value="0"/>
+    <att name="weight" type="real" value="0.5"/>
+    <att name="Entropy unweighted" type="string" value="1"/>
+    <graphics x="409.5" y="669.85" fill="#f5f5f5" cy:nodeLabelFont="Arial-0-11" labelanchor="c" type="ELLIPSE" cy:nodeTransparency="0.8" h="32" width="1" outline="#666666" w="32"/>
+  </node>
+  <edge id="e1" label="X04---X03" target="X04" directed="true" source="X03">
+    <att name="confidence" type="real" value="1022.78352"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="1"/>
+    <att name="complexity" type="real" value="7.13648"/>
+    <att name="sign" type="string" value="-"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="-0.897645296319441"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="0" cy:sourceArrow="0" fill="#aaaaff"/>
+  </edge>
+  <edge id="e2" label="X02---X01" target="X02" directed="true" source="X01">
+    <att name="confidence" type="real" value="669.55452"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="1"/>
+    <att name="complexity" type="real" value="7.13648"/>
+    <att name="sign" type="string" value="-"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="-0.81195675557659"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="0" cy:sourceArrow="0" fill="#aaaaff"/>
+  </edge>
+  <edge id="e3" label="X05---X03" target="X05" directed="true" source="X03">
+    <att name="confidence" type="real" value="164.00852"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="1"/>
+    <att name="complexity" type="real" value="7.13648"/>
+    <att name="sign" type="string" value="-"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="-0.488240786846918"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="0" cy:sourceArrow="0" fill="#aaaaff"/>
+  </edge>
+  <edge id="e4" label="MDM2-->CDK4" target="MDM2" directed="true" source="CDK4">
+    <att name="confidence" type="real" value="139.8904"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="27.8686"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.301262782034481"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e5" label="MYC-->PTEN" target="MYC" directed="true" source="PTEN">
+    <att name="confidence" type="real" value="108.1139"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="31.8671"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.415582072590283"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e6" label="KIT-->CDK4" target="KIT" directed="true" source="CDK4">
+    <att name="confidence" type="real" value="106.3127"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="22.9553"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.235180473036199"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e7" label="CCND1-->KIT" target="CCND1" directed="true" source="KIT">
+    <att name="confidence" type="real" value="96.3398"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="38.7822"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.170277314006725"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e8" label="MITF-->MYC" target="MITF" directed="true" source="MYC">
+    <att name="confidence" type="real" value="94.7824"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="25.0646"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.405470259001164"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e9" label="CDK2-->MITF" target="CDK2" directed="true" source="MITF">
+    <att name="confidence" type="real" value="91.6958"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="25.1922"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.391783778464252"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e10" label="MYC-->CDK4" target="MYC" directed="true" source="CDK4">
+    <att name="confidence" type="real" value="69.6593"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="24.4065"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.32509850162776"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e11" label="KIT-->RUNX3" target="KIT" directed="true" source="RUNX3">
+    <att name="confidence" type="real" value="65.7835"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="22.2916"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.27636101851296"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e12" label="MCAM--|KIT" target="MCAM" directed="true" source="KIT">
+    <att name="confidence" type="real" value="62.063"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="40.328"/>
+    <att name="sign" type="string" value="-"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="T"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="-0.130632872101594"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="15" cy:sourceArrow="0" fill="#aaaaff"/>
+  </edge>
+  <edge id="e13" label="TGFB2-->CDK4" target="TGFB2" directed="true" source="CDK4">
+    <att name="confidence" type="real" value="53.3622"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="10.0508"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.325009186339959"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e14" label="KIT-->CDK2" target="KIT" directed="true" source="CDK2">
+    <att name="confidence" type="real" value="49.5912"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="24.6019"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.280797400691294"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e15" label="CDKN2A-->CDK4" target="CDKN2A" directed="true" source="CDK4">
+    <att name="confidence" type="real" value="45.412"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="23.3947"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.241801345503284"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e16" label="KLF6-->CDK4" target="KLF6" directed="true" source="CDK4">
+    <att name="confidence" type="real" value="42.1056"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="15.9352"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.18231690604919"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e17" label="KIT-->MC1R" target="KIT" directed="true" source="MC1R">
+    <att name="confidence" type="real" value="38.1113"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="23.8632"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.308825020301748"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e18" label="X03---X02" target="X03" directed="true" source="X02">
+    <att name="confidence" type="real" value="37.8126"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="1"/>
+    <att name="complexity" type="real" value="10.7047"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="upstream" type="string" value="X05"/>
+    <att name="partialCorrelation" type="real" value="0.272563736616857"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="0" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e19" label="STAT2-->STAT1" target="STAT2" directed="true" source="STAT1">
+    <att name="confidence" type="real" value="35.6913"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="25.265"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.284503559968179"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e20" label="CDK4--|STAT2" target="CDK4" directed="true" source="STAT2">
+    <att name="confidence" type="real" value="35.6236"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="23.9143"/>
+    <att name="sign" type="string" value="-"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="T"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="-0.168354704166867"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="15" cy:sourceArrow="0" fill="#aaaaff"/>
+  </edge>
+  <edge id="e21" label="X05---X02" target="X05" directed="true" source="X02">
+    <att name="confidence" type="real" value="34.848"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="1"/>
+    <att name="complexity" type="real" value="10.7047"/>
+    <att name="sign" type="string" value="-"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="upstream" type="string" value="X03"/>
+    <att name="partialCorrelation" type="real" value="-0.264412855313535"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="0" cy:sourceArrow="0" fill="#aaaaff"/>
+  </edge>
+  <edge id="e22" label="GSTM1-->MCAM" target="GSTM1" directed="true" source="MCAM">
+    <att name="confidence" type="real" value="34.7253"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="10.8169"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.243750764477596"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e23" label="RUNX1--|KIT" target="RUNX1" directed="true" source="KIT">
+    <att name="confidence" type="real" value="32.0078"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="10.7565"/>
+    <att name="sign" type="string" value="-"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="T"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="-0.193477902341098"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="15" cy:sourceArrow="0" fill="#aaaaff"/>
+  </edge>
+  <edge id="e24" label="TP53-->CDKN2A" target="TP53" directed="true" source="CDKN2A">
+    <att name="confidence" type="real" value="26.9328"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="10.7732"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.224830893518365"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e25" label="CDKN2A-->NRAS" target="CDKN2A" directed="true" source="NRAS">
+    <att name="confidence" type="real" value="26.5103"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="22.9584"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.217911357036136"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e26" label="NRAS-->ATF2" target="NRAS" directed="true" source="ATF2">
+    <att name="confidence" type="real" value="24.0594"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="25.2041"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.092275988024831"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e27" label="CCND1---MCAM" target="CCND1" directed="true" source="MCAM">
+    <att name="confidence" type="real" value="20.4036"/>
+    <att name="weight" type="real" value="8"/>
+    <att name="edgeType" type="integer" value="1"/>
+    <att name="complexity" type="real" value="56.0212"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="upstream" type="string" value="KIT"/>
+    <att name="partialCorrelation" type="real" value="0.361923327102299"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="8" cy:edgeLineType="SOLID" cy:targetArrow="0" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e28" label="MITF-->STAT1" target="MITF" directed="true" source="STAT1">
+    <att name="confidence" type="real" value="19.0071"/>
+    <att name="weight" type="real" value="7.60284"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="16.7462"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.202987519275743"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="7.60284" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e29" label="RUNX2-->RUNX1" target="RUNX2" directed="true" source="RUNX1">
+    <att name="confidence" type="real" value="17.9572"/>
+    <att name="weight" type="real" value="7.18288"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="10.8369"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.105632293419501"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="7.18288" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e30" label="WNT5A--|MYC" target="WNT5A" directed="true" source="MYC">
+    <att name="confidence" type="real" value="17.1049"/>
+    <att name="weight" type="real" value="6.84196"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="10.3492"/>
+    <att name="sign" type="string" value="-"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="T"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="-0.138120425003235"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="6.84196" cy:edgeLineType="SOLID" cy:targetArrow="15" cy:sourceArrow="0" fill="#aaaaff"/>
+  </edge>
+  <edge id="e31" label="AKT3--|MDM2" target="AKT3" directed="true" source="MDM2">
+    <att name="confidence" type="real" value="16.98"/>
+    <att name="weight" type="real" value="6.792"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="16.3663"/>
+    <att name="sign" type="string" value="-"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="T"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="-0.0212208343477697"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="6.792" cy:edgeLineType="SOLID" cy:targetArrow="15" cy:sourceArrow="0" fill="#aaaaff"/>
+  </edge>
+  <edge id="e32" label="BCL6-->RUNX1" target="BCL6" directed="true" source="RUNX1">
+    <att name="confidence" type="real" value="16.072"/>
+    <att name="weight" type="real" value="6.4288"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="10.921"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.122402593325967"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="6.4288" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e33" label="MYC--|MCAM" target="MYC" directed="true" source="MCAM">
+    <att name="confidence" type="real" value="15.875"/>
+    <att name="weight" type="real" value="6.35"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="48.9263"/>
+    <att name="sign" type="string" value="-"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="T"/>
+    <att name="upstream" type="string" value="KIT"/>
+    <att name="partialCorrelation" type="real" value="-0.103548963754418"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="6.35" cy:edgeLineType="SOLID" cy:targetArrow="15" cy:sourceArrow="0" fill="#aaaaff"/>
+  </edge>
+  <edge id="e34" label="MC1R-->TP53" target="MC1R" directed="true" source="TP53">
+    <att name="confidence" type="real" value="15.2885"/>
+    <att name="weight" type="real" value="6.1154"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="10.9334"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.146942888380288"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="6.1154" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e35" label="CXCL1-->KIT" target="CXCL1" directed="true" source="KIT">
+    <att name="confidence" type="real" value="14.6053"/>
+    <att name="weight" type="real" value="5.84212"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="22.5163"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.0574416065553629"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="5.84212" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e36" label="NRAS-->CXCL1" target="NRAS" directed="true" source="CXCL1">
+    <att name="confidence" type="real" value="13.9955"/>
+    <att name="weight" type="real" value="5.5982"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="10.6648"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.1995795937469"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="5.5982" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e37" label="STAT1--|TP53" target="STAT1" directed="true" source="TP53">
+    <att name="confidence" type="real" value="12.1538"/>
+    <att name="weight" type="real" value="4.86152"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="24.3439"/>
+    <att name="sign" type="string" value="-"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="T"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="-0.156292830355786"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="4.86152" cy:edgeLineType="SOLID" cy:targetArrow="15" cy:sourceArrow="0" fill="#aaaaff"/>
+  </edge>
+  <edge id="e38" label="FGF2-->WNT5A" target="FGF2" directed="true" source="WNT5A">
+    <att name="confidence" type="real" value="11.1507"/>
+    <att name="weight" type="real" value="4.46028"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="10.0751"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.164002370220729"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="4.46028" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e39" label="PTEN-->MAPK1" target="PTEN" directed="true" source="MAPK1">
+    <att name="confidence" type="real" value="11.1149"/>
+    <att name="weight" type="real" value="4.44596"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="16.5924"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.0719964207580584"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="4.44596" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e40" label="NOTCH1-->CDK2" target="NOTCH1" directed="true" source="CDK2">
+    <att name="confidence" type="real" value="10.5977"/>
+    <att name="weight" type="real" value="4.23908"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="10.9375"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.0775734741355691"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="4.23908" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e41" label="ATF2-->AKT3" target="ATF2" directed="true" source="AKT3">
+    <att name="confidence" type="real" value="8.6265"/>
+    <att name="weight" type="real" value="3.4506"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="24.7312"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.0168624744284144"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="3.4506" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e42" label="GATA4-->NRAS" target="GATA4" directed="true" source="NRAS">
+    <att name="confidence" type="real" value="7.8484"/>
+    <att name="weight" type="real" value="3.13936"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="10.4848"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.119539732863301"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="3.13936" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e43" label="TP53-->FGF2" target="TP53" directed="true" source="FGF2">
+    <att name="confidence" type="real" value="7.2735"/>
+    <att name="weight" type="real" value="2.9094"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="10.7329"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.0597176380556394"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="2.9094" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e44" label="MAPK1--|STAT5B" target="MAPK1" directed="true" source="STAT5B">
+    <att name="confidence" type="real" value="6.3307"/>
+    <att name="weight" type="real" value="2.53228"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="24.7151"/>
+    <att name="sign" type="string" value="-"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="T"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="-0.0289411479881489"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="2.53228" cy:edgeLineType="SOLID" cy:targetArrow="15" cy:sourceArrow="0" fill="#aaaaff"/>
+  </edge>
+  <edge id="e45" label="STAT5B-->RUNX1" target="STAT5B" directed="true" source="RUNX1">
+    <att name="confidence" type="real" value="5.9941"/>
+    <att name="weight" type="real" value="2.39764"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="24.5468"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.0188598850532335"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="2.39764" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+  <edge id="e46" label="STAT5B-->FGF2" target="STAT5B" directed="true" source="FGF2">
+    <att name="confidence" type="real" value="4.7218"/>
+    <att name="weight" type="real" value="1.88872"/>
+    <att name="edgeType" type="integer" value="2"/>
+    <att name="complexity" type="real" value="10.6157"/>
+    <att name="sign" type="string" value="+"/>
+    <att name="confidenceRatio" type="real" value="0"/>
+    <att name="nSamples" type="integer" value="0"/>
+    <att name="sourceArrowShape" type="string" value="none"/>
+    <att name="targetArrowShape" type="string" value="arrow"/>
+    <att name="upstream" type="string" value="NA"/>
+    <att name="partialCorrelation" type="real" value="0.0868228440863929"/>
+    <graphics cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" width="1.88872" cy:edgeLineType="SOLID" cy:targetArrow="6" cy:sourceArrow="0" fill="#ff3300"/>
+  </edge>
+</graph>

@@ -1,0 +1,8 @@
+	## ---- Computing the sign of the edges ---- 
+	# Signs are calculated using partial correlation coefficient.
+SHD2 ::::  5 
+TP_skel ::::  41 
+FP_skel ::::  6 
+TP_ort ::::  36 
+FP_ort ::::  11 
+	# Summary File will contain information about the comparison with the true graph provided (-t enabled)
