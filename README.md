@@ -22,7 +22,6 @@ The C++ code, present in the "src" folder can be compiled tipyng:
 cd ../MIIC-master/src
 make clean;make
 ```
-
 ## Running the test
 The execution of the MIIC algorithm must be done through the R environment using the miic.R source, present inside the folder "common". Here the code to run MIIC on the example data:
 ```
