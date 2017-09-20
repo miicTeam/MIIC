@@ -20,6 +20,14 @@
 \usepackage[ruled]{algorithm2e}
 \usepackage{bm} 
 \usepackage{mathrsfs}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,
+  showstringspaces=false,
+  commentstyle=\color{red},
+  keywordstyle=\color{blue},
+    breaklines=true
+}
+
 
 % Use times if you have the font installed; otherwise, comment out the
 % following line.
@@ -148,11 +156,23 @@ The directories are organized as follow:
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
+
+
+
 \subsection*{Package requirements}
 To launch the miic.R script you need to have R installed on your machine, along with some packages that are available in the CRAN repository. 
 \begin{description}
 		\item[Rpackages]	MASS, getopt, plotrix, methods, igraph, ppcor, bnlearn   
 \end{description}
+
+\subsection*{Compiling}
+The C++ code, present in the "src" folder can be compiled tipyng:
+\begin{lstlisting}[language=bash]
+cd ../MIIC-master/src
+make clean;make
+\end{lstlisting}
+
+
 	
 \subsection*{Calling the inference methods with {\tt miic}}
 
@@ -191,10 +211,11 @@ You can call the inference methods through the \textit{miic.R} script.
 \end{itemize}
 
 \underline{An example}:\\
-\textit{\small{
-Rscript \textbf{miic.R -i } ../data/asiaDataset.txt \textbf{-o} ../data/asiaNetwork \textbf{-m} miic \textbf{-p} cpx:nml,efn:-1,lat:yes,prg:yes  \textbf{-c} csh:100,ccr:0.01
-}}
-\\
+\begin{lstlisting}[language=bash]
+cd ../MIIC-master/common
+Rscript miic.R -i ../data/asiaDataset.txt -o ../data/asiaNetwork -p cpx:nml,efn:-1,lat:yes,prg:yes -c csh:100,ccr:0.01
+\end{lstlisting}
+
 
 When calling the available inference methods with \emph{miic.R}, the `p' option can be used to indicate the chosen parameters. The value expected for this option is of type character:\\ `$param_{1}$:$value_{1}$,$param_{2}$:$value_{2}$ \textit{etc...}'. The possible $param_{i}$ and $value_{i}$ for each method are detailed in the following subsections.
 
@@ -246,6 +267,9 @@ In order to visualize the network in a correct, pleasant and interactive way, we
 \item Select the loaded style: under the ``Style'' panel present in ``Control Panel'' select miic\_style 
 
 \end{enumerate}
+
+\section{License}
+These materials are provided under a Creative Commons License license.
 
 \end{document}
 
