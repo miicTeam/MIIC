@@ -20,7 +20,6 @@ getos <- function(){
 userDir = getwd()
 isTest = FALSE
 
-
 osVersion = getos()
 slash = "/"
 if(osVersion == "windows")
