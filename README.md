@@ -5,8 +5,6 @@ MIIC (Multivariate Information Inductive Causation) learns a large class of caus
 Verny L., Sella N., Affeldt S., Singh PP., Isambert H.; Learning causal networks with latent variables from multivariate information in genomic data;  PLoS Comput. Biol., 2017.
 
 ## Useful links
-This code is included in the MIIC web server, available at [https://miic.curie.fr](https://miic.curie.fr).
-
 This code is inluded in the MIIC package for the R environment, available on CRAN.
 
 ## Getting Started
