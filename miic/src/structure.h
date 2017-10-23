@@ -62,7 +62,10 @@ struct ExecutionTime{
 	long double init;
 	long double iter;
 	long double initIter;
-	long double initIterSave;
+	long double ort;
+	long double cut;
+	long double ort_after_cut;
+	long double total;
 };
 
 struct XJAddress{
@@ -79,7 +82,7 @@ struct Edge{
  /* Structure for all the needed parameters (input plus state variables)
  */
 struct Environment {
-	// for gaussian case
+	ExecutionTime execTime;
 
 	int seed;
 	int nThreads;

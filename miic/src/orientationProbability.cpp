@@ -113,7 +113,6 @@ bool orientationProbability(Environment environment, string slash, bool isVerbos
 
 	////// GET ALL TPL that could be V/NON-V-STRUCTURES #######
 	if(isVerbose){ cout << "\n# ---- Get all the unshielded triplets ----\n";}
-	clock_t startTime_algo = std::clock();
 
 	for(int pos = 0; pos < environment.noMoreAddress.size(); pos++){
 		int posX = environment.noMoreAddress[pos]->i;
@@ -223,29 +222,16 @@ bool orientationProbability(Environment environment, string slash, bool isVerbos
 		}
 	}
 
-	long double spentTime = std::clock() - startTime_algo;
-	if(isVerbose){ cout << "\n# ----> Propagate Orientations elapsed time:", spentTime, "sec.\n\n" ; }
-
-	// ALGO STOP TIME
-	long double spentTime_algo = (std::clock() - startTime_algo) / (double)(CLOCKS_PER_SEC / 1000) /1000;
-
 	//Save the time spent on the algo (if the time for the skeleton already exists, copy the file, open and add before saving)
 	ss.str("");
 	//// Save the execTime
 	ss << environment.outDir << slash << "execTime.miic.skeleton.txt";
 
 	if(existsTest(ss.str())){
-		readTime(ss.str(), execTime);
-	     execTime.initIter += spentTime_algo;
-	     execTime.initIterSave += spentTime_algo;
-	 } else{ 
-	    execTime.initIter = spentTime_algo;
+		readTime(environment, ss.str());
 	}
 	
 	ss.str("");
-	//// Save the execTime
-	ss << environment.outDir << slash << "execTime.miic.orient.skeleton.txt";
-	saveExecTime(environment, execTime, ss.str());
 	vector<double> myProba;
 	//// UPDATE ADJ MATRIX #######
 	if( myNbrTpl > 0 ){
@@ -309,9 +295,4 @@ bool orientationProbability(Environment environment, string slash, bool isVerbos
 	ss << environment.outDir << slash << "adjacencyMatrix.miic.orientProba.txt";
 	saveAdjMatrix(environment, ss.str());
 
-	// Save the mutualInformation_final...txt with a new name
-
-	spentTime = (std::clock() - startTime_algo) / (double)(CLOCKS_PER_SEC / 1000) /1000;
-	if(isVerbose)
-		cout << "\n# ----> Update Adjacency Matrix elapsed time:" << spentTime << "sec\n\n";
 }

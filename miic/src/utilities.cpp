@@ -228,7 +228,7 @@ class sorter {
 };
 
 
-bool readTime(string name, ExecutionTime& execTime){
+bool readTime(Environment& environment, string name){
 	const char * c = name.c_str();
 	ifstream input (c);
 	string lineData;
@@ -241,13 +241,19 @@ bool readTime(string name, ExecutionTime& execTime){
 		istringstream f(lineData);
 			while (getline(f, s, '\t')) {
 				if(col == 0)
-					execTime.init = atof(s.c_str());
+					environment.execTime.init = atof(s.c_str());
 				else if(col == 1)
-					execTime.iter = atof(s.c_str());
+					environment.execTime.iter = atof(s.c_str());
 				else if(col == 2)
-					execTime.initIter = atof(s.c_str());
+					environment.execTime.initIter = atof(s.c_str());
 				else if(col == 3)
-					execTime.initIterSave = atof(s.c_str());
+					environment.execTime.ort = atof(s.c_str());
+				else if(col == 4)
+					environment.execTime.cut = atof(s.c_str());
+				else if(col == 5)
+					environment.execTime.ort_after_cut = atof(s.c_str());
+				else if(col == 6)
+					environment.execTime.total = atof(s.c_str());
 				col++;
 			}
 		}
@@ -455,14 +461,15 @@ bool saveEdgesListAsTable(const Environment environment, const string filename){
 /*
  * Save the runtime file
  */
-bool saveExecTime(const Environment environment, ExecutionTime execTime, const string filename){
+bool saveExecTime(const Environment environment, const string filename){
 	if(environment.isVerbose)
 		cout << "Saving execution time\n";
 	ofstream output;
 	output.open(filename.c_str());
 
-	output << "init" <<	"\t" << "iter" << "\t" << "initIter" << "\t" << "initIterSave" << "\n";
-	output << execTime.init <<	"\t" << execTime.iter << "\t" << execTime.initIter << "\t" << execTime.initIterSave;
+	output << "init" <<	"\t" << "iter" << "\t" << "initIter" << "\t" << "ort" << "\t" << "cut" << "\t" << "ort_after_cut" << "\t" "\t" << "total" "\n";
+	output << environment.execTime.init <<	"\t" << environment.execTime.iter << "\t" << environment.execTime.initIter << "\t" 
+	<< environment.execTime.ort << "\t" << environment.execTime.cut << "\t" << environment.execTime.ort_after_cut << "\t" << environment.execTime.total;
 }
 
 bool existsTest(const string& name) {

@@ -18,6 +18,7 @@ summary.parseCommandLine <- function()
                       , 'inferredEdges', 'i', 1, "character"    # File path to the inferred egdes
                       , 'adjMat', 'a', 1, "character"           # File path to the adjacency matrix
                       , 'isContinuous', 'c', 1, "integer"		# data continuous or not.
+                      , 'confRatio', 'r', 1, "character"
 				              , 'writeNetwork', 'n', 0, "logical"
                       , 'isVerbose', 'v', 0, "logical")         # Verbose
                       , byrow = TRUE, ncol = 4 );
@@ -36,6 +37,7 @@ summary.parseCommandLine <- function()
     myIsCnt = 0
     myIsVerbose = FALSE
     myWriteNetwork = FALSE
+    myConfRatio = 1
 
     #### Check the input arguments
     # ----
@@ -54,6 +56,8 @@ summary.parseCommandLine <- function()
 
     if( !is.null( opt$inferredEdges ) )
     { myInfEdgesFilePath <- opt$inferredEdges } else { stop("The filename of the inferred edges is required (-e)") }    
+
+    if( !is.null( opt$confRatio ) ) { myConfRatio <- opt$confRatio }
 
     # True edges file
     if( !is.null( opt$trueEdges ) )
@@ -79,6 +83,7 @@ summary.parseCommandLine <- function()
      			argLayoutFile = myLayoutFile, 
      			argInfEdgesFile = myInfEdgesFilePath,
      			argVerbose = myIsVerbose,
+     			argConfRatio=myConfRatio,
      			argCnt = myIsCnt,
     			argAdjMat = myAdjMatFilePath ))
 }
@@ -165,21 +170,9 @@ computeSign.cont.pcor <- function(edgeList, myGv, outDirPath, originalPath)
     		rownames(myStateOrderTable) = myStateOrderTable[,"var_names"]
 		}
 
-    }			
+    }		
+	
 	unassignedNodes = findUnassignedNodes(myGv, myStateOrderTable)
-	dataTest = myGv$data+1
-
-	write.table(dataTest, paste(outDirPath, "/datasetOrdered.txt",sep=""), sep="\t", col.names = T, row.names = F,quote = F)
-	write(unassignedNodes, paste(outDirPath, "/unassignedNodes.txt",sep=""), sep="\t")
-  
-	setwd(originalPath)
-	command = paste(paste(outDirPath, "/datasetOrdered.txt",sep=""), 
-	                paste(outDirPath, "/unassignedNodes.txt",sep=""), 
-	                paste(outDirPath, "/adjacencyMatrix.miic.orientProba.txt",sep=""),
-	                paste(outDirPath, "/mediationAnalysis.txt",sep=""))
-
-	# system2("../extendedAnalysis/extendedMediation", command)
-  	setwd(outDirPath)
   
 	edgeTabIdx = which(edgeList[,"confidence"] > 0)
 	# Loop on all edges
@@ -192,7 +185,7 @@ computeSign.cont.pcor <- function(edgeList, myGv, outDirPath, originalPath)
 		x <- myGv$data[,edgeList[edge,"x"]] ; y <- myGv$data[,edgeList[edge,"y"]]
 		x.name <- edgeList[edge,"x"]; y.name <- edgeList[edge,"y"]
 		# Check if nodes are in unassignedNodes
-		if(!x.name %in% unassignedNodes & !y.name %in% unassignedNodes)
+		if(!x.name %in% unassignedNodes & !y.name %in% unassignedNodes & length(which(edgeList[edge,"ui"] %in% unassignedNodes)) == 0)
 		{
 			if(!is.na(edgeList[edge,"ui"]))
 			{	

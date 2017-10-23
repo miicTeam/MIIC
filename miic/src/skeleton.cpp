@@ -68,7 +68,7 @@ bool skeleton(Environment& environment, string slash, clock_t startTimeWhole, in
 
 	// ----
 	long double spentTime = (std::clock() - startTime) / (double)(CLOCKS_PER_SEC / 1000) /1000;
-	execTime.init = spentTime;
+	environment.execTime.init = spentTime;
 	if( environment.isVerbose == true ){ cout << "\n# ----> First contributing node elapsed time:" << spentTime << "sec\n\n"; }
 	
 
@@ -90,13 +90,15 @@ bool skeleton(Environment& environment, string slash, clock_t startTimeWhole, in
 		output << "Skeleton iteration";
 		output.close();
 		skeletonIteration(environment);
+		long double spentTime = (std::clock() - startTime) / (double)(CLOCKS_PER_SEC / 1000) /1000;
+		environment.execTime.iter = spentTime;
+		environment.execTime.initIter = environment.execTime.init + environment.execTime.iter;
 	}
 
 
 
 	//// Save the ordered edges and make an adjacency matrix
 	if(environment.isVerbose){ cout << "\n# ---- Save the ordered edges and make an adjacency matrix ----\n\n"; }
-	startTime = std::clock();
 
 	if( environment.numNoMore > 0 )
 	{
@@ -111,27 +113,7 @@ bool skeleton(Environment& environment, string slash, clock_t startTimeWhole, in
 		ss << environment.outDir << slash << "adjacencyMatrix.miic.txt";
 		saveAdjMatrix(environment, ss.str());
 		//adj.mat = saveEdgesListAsAdjMat( environment, myAllProp = colnames(gV$data), myOutputFilePath = outputFilePath )
-	}
-
-	// get the spent time
-	spentTime = (std::clock() - startTime) / (double)(CLOCKS_PER_SEC / 1000) /1000;
-	execTime.initIterSave = execTime.initIter + spentTime;
-
-	if(environment.isVerbose){ cout << "\n# ----> Save the ordered edges and make an adjacency matrix:" << execTime.initIterSave << " sec\n\n"; }
-	ss.str("");
-	//// Save the execTime
-	ss << environment.outDir << slash << "execTime.miic.skeleton.txt";
-	saveExecTime(environment, execTime, ss.str());
-
-	long double spentTimeWhole = (std::clock() - startTime) / (double)(CLOCKS_PER_SEC / 1000) /1000;
-	if(environment.isVerbose){ 
-		if(spentTimeWhole/60/60 > 1)
-			cout << "# -> STOP miic Skeleton elapsed time:" << spentTimeWhole/60/60 << "hours and" << spentTimeWhole/60 << "minutes \n\n";
-		else if(spentTimeWhole/60 > 1)
-			cout << "# -> STOP miic Skeleton elapsed time:" << spentTimeWhole/60 << "min\n\n"; 
-		else
-			cout << "# -> STOP miic Skeleton elapsed time:" << spentTimeWhole << "sec\n\n"; 
-	}		
+	}	
 
 	return 0;
 }

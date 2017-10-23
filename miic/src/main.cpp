@@ -39,6 +39,7 @@ int main(int argc, char* argv[]){
 
 
 	clock_t startTimeWhole = std::clock();
+	clock_t startTime;
 
 	// define the environment
 	Environment environment;
@@ -114,6 +115,7 @@ int main(int argc, char* argv[]){
 
 	}
 
+	startTime = std::clock();
 	ss.str("");
 	ss << environment.outDir << slash << "adjacencyMatrix.miic.orientProba.txt";
 	string filename = ss.str();
@@ -125,8 +127,11 @@ int main(int argc, char* argv[]){
 		}
 	}
 
-	if(environment.numberShuffles > 0){
+	long double spentTime = (std::clock() - startTime) / (double)(CLOCKS_PER_SEC / 1000) /1000;
+	environment.execTime.ort = spentTime;
 
+	if(environment.numberShuffles > 0){
+		startTime = std::clock();
 		output.open(filename_progress.c_str());
 		output << "Confidence tool";
 		output.close();
@@ -143,6 +148,9 @@ int main(int argc, char* argv[]){
 
 		cout << "# -> END Confidence Cut\n";
 
+		long double spentTime = (std::clock() - startTime) / (double)(CLOCKS_PER_SEC / 1000) /1000;
+		environment.execTime.cut = spentTime;
+
 		ss.str("");
 		//// Make a table from the list
 		ss << environment.outDir << slash << "edgesList.miic.txt";
@@ -153,15 +161,24 @@ int main(int argc, char* argv[]){
 		output.open(filename_progress.c_str());
 		output << "Orientation";
 		output.close();
-
+		startTime = std::clock();
 		if(environment.noMoreAddress.size() > 0){
 			if(find(environment.steps.begin(), environment.steps.end(), 2) != environment.steps.end()){
 				//perform the edge orientation
 				orientationProbability(environment, slash, environment.isVerbose);// environment.isVerbose);
 			}
 		}
+
+		spentTime = (std::clock() - startTime) / (double)(CLOCKS_PER_SEC / 1000) /1000;
+		environment.execTime.ort_after_cut = spentTime;
 	}
 
+	spentTime = (std::clock() - startTimeWhole) / (double)(CLOCKS_PER_SEC / 1000) /1000;
+	environment.execTime.total = spentTime;
+
+	ss.str("");
+	ss << environment.outDir << slash << "execTime.miic.txt";
+	saveExecTime(environment, ss.str());
 
 	//delete pointers, free memory
 	deleteMemorySpace(environment, environment.m);

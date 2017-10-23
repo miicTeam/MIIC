@@ -170,7 +170,8 @@ if( discoNetArg.list[["argMethod"]] == "miic" )
     if(!dir.exists(out_shf_dir))
       dir.create( out_shf_dir , recursive=T) 
     else
-      stop("The folder of the confidence cut already exists.")
+      if(1 %in% discoNetArg.list[["argSteps"]] | 2 %in% discoNetArg.list[["argSteps"]])
+       stop("The folder of the confidence cut already exists.")
   }
  
   ## START CALLS
@@ -296,6 +297,7 @@ if( 3 %in% discoNetArg.list[["argSteps"]] )
     vec = discoNetArg.list[["argOutDir"]]
   }
    
+  count = 0
   for(val in vec){
 
     out =  paste('"',val,'"',sep="")
@@ -329,10 +331,14 @@ if( 3 %in% discoNetArg.list[["argSteps"]] )
     if( length( discoNetArg.list[["argStateOrder"]] ) > 0 )
     { currCmd = paste( currCmd, ' -s ', discoNetArg.list[["argStateOrder"]], sep='' ) }
 
+    if(count > 0 & length( discoNetArg.list[["argConfidenceRatio"]] ) > 0 )
+    { currCmd = paste( currCmd, ' -r ', discoNetArg.list[["argConfidenceRatio"]], sep='' ) }
+
     if(discoNetArg.list[["argWriteNetwork"]])
       currCmd = paste( currCmd, ' -n ', sep='' )
     print(paste("COMMAND SUMMARY:" , currCmd))
     system( currCmd )
+    count = count + 1
   }
 
 

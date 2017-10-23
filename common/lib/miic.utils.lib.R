@@ -253,7 +253,8 @@ checkInput <- function(dataFile, method, data){
 
 		isCnt_test = sum(apply( data[-1,],2,isContinuous ))
   		   
-		if(isCnt_test > 0){ errCode = "118"}
+		if(isCnt_test > 0.2 * ncol(data)){ errCode = "118"}
+		
 		if (method == "miic" & length(unique(data[1,])) != ncol(data)) { errCode = "117"}
 	}
 	

@@ -75,6 +75,7 @@ infEdgesFile = summaryArg.list[["argInfEdgesFile"]]
 adjMatFile = summaryArg.list[["argAdjMat"]]
 isCnt = summaryArg.list[["argCnt"]]
 isVerbose = summaryArg.list[["argVerbose"]]
+confRatio = as.numeric(summaryArg.list[["argConfRatio"]])
 
 #read dataset
 inputData.df <- read.table( file = inputDataFile, header = TRUE, stringsAsFactors = FALSE, sep = "\t", 
@@ -422,7 +423,38 @@ if( isVerbose == TRUE ){ cat( "\t# -> STOP miic summary elapsed time:", (spentTi
 
 
 
+## NS
+tmp_argOutDir = getwd()
+tmp_pvalFile = file.path(tmp_argOutDir, "confRatios.txt")
+if( file.exists(tmp_pvalFile) ){
+    tmp_sum = outputSummary.df[,!colnames(outputSummary.df)%in%getridOff]
+    conf_col = rep(1, nrow( tmp_sum ) )
+    isCut = rep(NA, nrow(tmp_sum))
+    tmp_sum = cbind(tmp_sum,conf_col,isCut)
+
+    tmp_sum = cbind(tmp_sum,conf_col)
+    colnames(tmp_sum) = c('x','y','type','ai','info','cplx','Nxy_ai','log_confidence','infOrt','trueOrt', 'isOrtOk', 'sign','partial_correlation','confidence_ratio')
+    tmp_pval = read.table(tmp_pvalFile, header=T, as.is=T, sep="\t", check.names = F)
+    tmp_pval[,"confidence_ratio"] = as.numeric(tmp_pval[,"confidence_ratio"])
+
+    for(r in 1:nrow(tmp_pval))
+    {
+      tmp_sum[which(tmp_sum[,"x"] == tmp_pval[r,"x"] & tmp_sum[,"y"] == tmp_pval[r,"y"]),'confidence_ratio'] =tmp_pval[r,"confidence_ratio"]
+      if(tmp_pval[r,"confidence_ratio"] < confRatio){
+        tmp_sum[which(tmp_sum[,"x"]==tmp_pval[r,"x"] & tmp_sum[,"y"]==tmp_pval[r,"y"]),'isCut']='N'
+      }
+      else{
+        tmp_sum[which(tmp_sum[,"x"]==tmp_pval[r,"x"] & tmp_sum[,"y"]==tmp_pval[r,"y"]),'isCut']='Y'
+      }
+    }
+    tmp_sum = tmp_sum[,c('x','y','type','ai','info','cplx','Nxy_ai','log_confidence','confidence_ratio','infOrt','trueOrt', 'isOrtOk', 'sign','partial_correlation','isCut')]
+    write.table(tmp_sum,outputSummaryFile, col.names=T, row.names=T, sep='\t',quote=F)
+    outputSummary.df=tmp_sum
+    rm(tmp_sum); rm(tmp_pval)
+  }
+
 ##################################### NETWORK IN GRAPHML
+
 
 line = "<graphml>\n"
 
@@ -442,14 +474,16 @@ line = paste(line,"\t<key id=\"label\" for=\"edge\" attr.name=\"label\" attr.typ
 line = paste(line,"\t<key id=\"sourceArrowShape\" for=\"edge\" attr.name=\"sourceArrowShape\" attr.type=\"string\"/>\n",sep="")
 line = paste(line,"\t<key id=\"targetArrowShape\" for=\"edge\" attr.name=\"targetArrowShape\" attr.type=\"string\"/>\n",sep="")
 line = paste(line,"\t<key id=\"upstream\" for=\"edge\" attr.name=\"upstream\" attr.type=\"string\"/>\n",sep="")
+line = paste(line,"\t<key id=\"info\" for=\"edge\" attr.name=\"info\" attr.type=\"double\"/>\n",sep="")
 line = paste(line,"\t<key id=\"complexity\" for=\"edge\" attr.name=\"complexity\" attr.type=\"double\"/>\n",sep="")
 line = paste(line,"\t<key id=\"nSamples\" for=\"edge\" attr.name=\"nSamples\" attr.type=\"int\"/>\n",sep="")
 line = paste(line,"\t<key id=\"log_confidence\" for=\"edge\" attr.name=\"log_confidence\" attr.type=\"double\"/>\n",sep="")
-line = paste(line,"\t<key id=\"confidenceRatio\" for=\"edge\" attr.name=\"confidenceRatio\" attr.type=\"double\"/>\n",sep="")
+if(confRatio != 1){
+    line = paste(line,"\t<key id=\"confidenceRatio\" for=\"edge\" attr.name=\"confidenceRatio\" attr.type=\"double\"/>\n",sep="")
+}
 line = paste(line,"\t<key id=\"sign\" for=\"edge\" attr.name=\"sign\" attr.type=\"string\"/>\n",sep="")
 line = paste(line,"\t<key id=\"partialCorrelation\" for=\"edge\" attr.name=\"partialCorrelation\" attr.type=\"double\"/>\n",sep="")
 line = paste(line,"\t<key id=\"edgeType\" for=\"edge\" attr.name=\"edgeType\" attr.type=\"int\"/>\n",sep="")
-
 
 line = paste(line,"\n",sep="")
 
@@ -560,13 +594,14 @@ for(index in indexes){
   line = paste(line,"\t\t\t<data key=\"weight\">", value ,"</data>\n",sep="")
 
   line = paste(line,"\t\t\t<data key=\"upstream\">", outputSummary.df[index, "ai"] ,"</data>\n",sep="")
+  line = paste(line,"\t\t\t<data key=\"info\">", outputSummary.df[index, "info"] ,"</data>\n",sep="")
   line = paste(line,"\t\t\t<data key=\"complexity\">", outputSummary.df[index, "cplx"] ,"</data>\n",sep="")
   line = paste(line,"\t\t\t<data key=\"nSamples\">", outputSummary.df[index, "Nxy_ui"] ,"</data>\n",sep="")
-  line = paste(line,"\t\t\t<data key=\"confidenceRatio\">", outputSummary.df[index, "confidence_ratio"] ,"</data>\n",sep="")
+  if(confRatio != 1)
+    line = paste(line,"\t\t\t<data key=\"confidenceRatio\">", outputSummary.df[index, "confidence_ratio"] ,"</data>\n",sep="")
   line = paste(line,"\t\t\t<data key=\"log_confidence\">", outputSummary.df[index, "log_confidence"] ,"</data>\n",sep="")
   line = paste(line,"\t\t\t<data key=\"sign\">", outputSummary.df[index, "sign"] ,"</data>\n",sep="")
   line = paste(line,"\t\t\t<data key=\"partialCorrelation\">", outputSummary.df[index, "partial_correlation"] ,"</data>\n",sep="")
-
 
   line = paste(line,"\t\t</edge>\n",sep="")
 
@@ -715,12 +750,16 @@ if(length(summaryArg.list[["argLayoutFile"]]) > 0){
       
       line = paste(line,"\t\t\t<att name=\"weight\" type=\"double\" value=\"", value ,"\"/>\n",sep="")
       line = paste(line,"\t\t\t<att name=\"upstream\" type=\"string\" value=\"", outputSummary.df[index, "ai"] ,"\"/>\n",sep="")
+      line = paste(line,"\t\t\t<att name=\"info\" type=\"double\" value=\"", outputSummary.df[index, "info"] ,"\"/>\n",sep="")
       line = paste(line,"\t\t\t<att name=\"complexity\" type=\"double\" value=\"", outputSummary.df[index, "cplx"] ,"\"/>\n",sep="")
       line = paste(line,"\t\t\t<att name=\"nSamples\" type=\"integer\" value=\"", outputSummary.df[index, "Nxy_ai"] ,"\"/>\n",sep="")
-      line = paste(line,"\t\t\t<att name=\"confidenceRatio\" type=\"double\" value=\"", outputSummary.df[index, "confidence_ratio"] ,"\"/>\n",sep="")
+      if(confRatio != 1)
+        line = paste(line,"\t\t\t<att name=\"confidenceRatio\" type=\"double\" value=\"", outputSummary.df[index, "confidence_ratio"] ,"\"/>\n",sep="")
       line = paste(line,"\t\t\t<att name=\"log_confidence\" type=\"double\" value=\"", outputSummary.df[index, "log_confidence"] ,"\"/>\n",sep="")
       line = paste(line,"\t\t\t<att name=\"sign\" type=\"string\" value=\"", outputSummary.df[index, "sign"] ,"\"/>\n",sep="")
       line = paste(line,"\t\t\t<att name=\"partialCorrelation\" type=\"double\" value=\"", outputSummary.df[index, "partial_correlation"] ,"\"/>\n",sep="")
+      if(confRatio != 1)
+        line = paste(line,"\t\t\t<att name=\"isCut\" type=\"double\" value=\"", outputSummary.df[index, "isCut"] ,"\"/>\n",sep="")
 
       if(outputSummary.df[index, "sign"] == "+")
         fillColor = "#ff3300"
