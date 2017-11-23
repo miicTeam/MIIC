@@ -550,9 +550,10 @@ int OrientTpl_LV_Deg_Propag(int NbTpl, int *Tpl, double *I3, double *ProbArrowhe
 	#endif // _MY_PRINT_
 
 
-	delete(ProbArrowhead2);
-	delete(scoreTpl);
-	delete(orderTpl);
+	delete [] ProbArrowhead2;
+	delete [] scoreTpl;
+	delete []orderTpl;
+	delete [] scoresN;
 	
 	return( 0 );
 }

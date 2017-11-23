@@ -80,7 +80,7 @@ int initEdgeElt(Environment& environment, int i, int j){
 	double myTest = 0;
 	string category;
 
-	delete(res);
+	free(res);
 
 	if(environment.isNoInitEta)
 		myTest = environment.edges[i][j].edgeStructure->Ixy_ui - environment.edges[i][j].edgeStructure->cplx;
@@ -139,7 +139,7 @@ void* initEdgeEltThread(void* container){
 			double myTest = 0;
 			string category;
 
-			delete(res);
+			free(res);
 
 			if(environment.isNoInitEta)
 				myTest = environment.edges[i][j].edgeStructure->Ixy_ui - environment.edges[i][j].edgeStructure->cplx;
@@ -260,7 +260,6 @@ bool skeletonInitialization(Environment& environment){
 			}
 		}
 	} else {
-		double sum = 0;
 
 		for(int i = 0; i < environment.numNodes - 1; i++){
 			for(int j = i + 1; j < environment.numNodes; j++){
@@ -301,9 +300,6 @@ bool skeletonInitialization(Environment& environment){
 			}
 		}
 	}
-
-	// print the time spent
-	long double spentTime = time(0)*1000 - startTime;
 
 	if(nthreadsMax > 1){
 		// create meory space for thread execution
@@ -426,9 +422,6 @@ bool skeletonInitialization(Environment& environment){
 				}
 			}
 		}
-
-
-		long double spentTime = (time(0) - startTime)/1000;
 
 		// sort the ranks
 		std::sort(environment.searchMoreAddress.begin(), environment.searchMoreAddress.end(), sorter1(environment));

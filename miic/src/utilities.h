@@ -30,5 +30,5 @@ bool readBlackbox(Environment&, std::string);
 bool removeBlackboxEdges(Environment& environment);
 void sort2arrays(int len, int a[], int brr[], int bridge[]);
 vector< vector <string> > saveEdgesListAsTable1(Environment& environment);
-
+void deleteMemorySpaceThreads(Environment& environment, ContainerMemory& m);
 #endif

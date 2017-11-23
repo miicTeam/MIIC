@@ -182,6 +182,9 @@ int main(int argc, char* argv[]){
 
 	//delete pointers, free memory
 	deleteMemorySpace(environment, environment.m);
+
+	for(int i = 0 ; i < environment.numNoMore; i++)
+		delete environment.noMoreAddress[i];
 	
 	delete [] environment.allLevels;
 	delete [] environment.oneLineMatrix;
@@ -195,6 +198,10 @@ int main(int argc, char* argv[]){
 	for(int i = 0; i < environment.numSamples;i++ ){	
 		delete [] environment.data[i];
 		delete [] environment.dataNumeric[i];
+	}
+
+	for(int i = 0; i < environment.numNodes; i++){
+		delete [] environment.edges[i];
 	}
 
 	delete [] environment.c2terms;

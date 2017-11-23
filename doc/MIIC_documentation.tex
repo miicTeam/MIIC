@@ -168,7 +168,7 @@ To launch the miic.R script you need to have R installed on your machine, along 
 \subsection*{Compiling}
 The C++ code, present in the "src" folder can be compiled tipyng:
 \begin{lstlisting}[language=bash]
-cd ../MIIC/src
+cd MIIC/src
 make clean;make
 \end{lstlisting}
 
@@ -212,7 +212,7 @@ You can call the inference methods through the \textit{miic.R} script.
 
 \underline{An example}:\\
 \begin{lstlisting}[language=bash]
-cd ../MIIC/common
+cd MIIC/common
 Rscript miic.R -i ../data/asiaDataset.txt -o ../data/asiaNetwork -p cpx:nml,efn:-1,lat:yes,prg:yes -c csh:100,ccr:0.01
 \end{lstlisting}
 
@@ -231,7 +231,8 @@ When calling the available inference methods with \emph{miic.R}, the `p' option 
 	
 	
 	\item[efn] number of uncorrelated samples\\default:~number of rows of the input dataset (\textit{\small{Ex.:~-p ...,efn:1000,...}})
-
+	\item[thr] number of threads
+	 
 \end{description}
 
 \underline{A `-p' example}:~\textit{\small{-p cpx:mdl,efn:1000}}

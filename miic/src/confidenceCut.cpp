@@ -196,7 +196,11 @@ bool confidenceCut(Environment& environment, string slash){
 	cout << "\n# -- number of edges cut: " << toDelete.size() << "\n";
 
 	//delete from vector
+	for(int i = 0 ; i < environment.numNoMore; i++)
+		delete environment.noMoreAddress[i];
 	environment.noMoreAddress.clear();
+
+	
 	for(int i = 0; i < environment.numNoMore; i++){
 		if(!(std::find(toDelete.begin(), toDelete.end(), i) != toDelete.end())) {
 			int X = inferredEdges_tab[i][0] ;
@@ -240,19 +244,20 @@ bool confidenceCut(Environment& environment, string slash){
 	std::sort(environment.noMoreAddress.begin(), environment.noMoreAddress.end(), sorterNoMore2(environment));
 	environment.numNoMore = environment.noMoreAddress.size();
 
-	delete ptrVarIdx;
+		delete [] ptrVarIdx;
 
 	for(int i=0; i<environment.numSamples; i++)
-		delete safe_state[i];
-	delete safe_state;
+		delete [] safe_state[i];
+	delete [] safe_state;
 
-	delete lookup;
+	delete [] lookup;
+
+	delete [] nodes_toShf;
 
 	for(int i=0; i < noMore; i++)
-		delete inferredEdges_tab[i];
-	delete inferredEdges_tab;
-	delete nodes_toShf;
-	delete confVect; 
+		delete [] inferredEdges_tab[i];
+	delete [] inferredEdges_tab;
+	delete [] confVect; 
 	
 	return true;
 }

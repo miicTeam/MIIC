@@ -6,7 +6,7 @@
 #include <iostream>
 #include "utilities.h"
 #include "computeInfo_interface.h"
-
+#include <cstdlib>
 
 using namespace std;
 
@@ -15,7 +15,6 @@ using namespace std;
 */
 double* computeEnsInformationNew(Environment& environment, int* myCond, int myNbrUi,  int* myZi, int myNbrZi, int myZiPos, 
 	const int myVarIdxX, const int myVaridxY, const int cplx){
-	bool test = false;
 
 	int* posArray = new int[2 + environment.edges[myVarIdxX][myVaridxY].edgeStructure->ui_vect_idx.size()];
 	posArray[0] = myVarIdxX;
@@ -57,7 +56,7 @@ double* computeEnsInformationNew(Environment& environment, int* myCond, int myNb
 		}
 	}
 
-	delete posArray;
+	delete [] posArray;
 
 	return res_new;
 }
@@ -68,7 +67,6 @@ double* computeEnsInformationNew(Environment& environment, int* myCond, int myNb
  */
 double* computeEnsInformationNewThread(Environment& environment, int* myCond, int myNbrUi,  int* myZi, int myNbrZi, int myZiPos, 
 	const int myVarIdxX, const int myVaridxY, const int cplx, MemorySpace m){
-	bool test = false;
 
 	int* posArray = new int[2 + environment.edges[myVarIdxX][myVaridxY].edgeStructure->ui_vect_idx.size()];
 	posArray[0] = myVarIdxX;
@@ -98,7 +96,7 @@ double* computeEnsInformationNewThread(Environment& environment, int* myCond, in
 		}
 	}
 
-	delete posArray;
+	delete [] posArray;
 
 	return res_new;
 }
@@ -137,9 +135,6 @@ void removeifBothPhantomAndNA(Environment& environment, vector<int>& vec, const 
  * search for the best z and find the rank
  */
 bool SearchForNewContributingNodeAndItsRank(Environment& environment, const int posX, const int posY) {
-
-	bool test=false;
-	//// --------
 
 	if(environment.edges[posX][posY].edgeStructure->zi_vect_idx.size() == 0)
 	 	return true;
@@ -187,6 +182,8 @@ bool SearchForNewContributingNodeAndItsRank(Environment& environment, const int 
 		environment.edges[posX][posY].edgeStructure->Nxyz_ui = vect[6];
 	} 
 
+	free(vect);
+
 	return true;
 }
 
@@ -211,9 +208,6 @@ void* SearchForNewContributingNodeAndItsRankThread(void* container){
 	for(int pos = start; pos < stop && pos < environment.numSearchMore; pos++){
 		int posX = environment.searchMoreAddress[pos]->i;
 		int posY = environment.searchMoreAddress[pos]->j;
-
-		bool test=false;
-		//// --------
 
 		if(environment.edges[posX][posY].edgeStructure->zi_vect_idx.size() != 0)
 		{
@@ -260,7 +254,7 @@ void* SearchForNewContributingNodeAndItsRankThread(void* container){
 					environment.edges[posX][posY].edgeStructure->Nxyz_ui = vect[3];
 				} 
 				
-				delete vect;
+				free(vect);
 			}
 		}
 	}

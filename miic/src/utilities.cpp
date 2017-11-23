@@ -132,8 +132,7 @@ bool deleteMemorySpace(Environment& environment, MemorySpace& m){
 			maxLevel = environment.allLevels[i];
 		
 	int nrow=environment.numSamples+1;
-	int sampleSize = environment.numSamples;
-	int ncol=7;
+
 	int bin_max=maxLevel;
 	int i;
 
@@ -164,6 +163,40 @@ bool deleteMemorySpace(Environment& environment, MemorySpace& m){
 	free(m.bridge);
 }
 
+
+
+void deleteMemorySpaceThreads(Environment& environment, ContainerMemory& m){
+
+	int maxLevel = 0;
+	for(int i =0; i<environment.numNodes; i++)
+		if(environment.allLevels[i] > maxLevel)
+			maxLevel = environment.allLevels[i];
+
+	int nrow=environment.numSamples+1;
+
+	int bin_max=maxLevel;
+	int iii;
+
+
+	for(iii = 0; iii < nrow; iii++) 
+	 	free(m.sortedSample[iii]);
+	free(m.sortedSample);
+
+	
+	for(iii = 0; iii < bin_max+1; iii++) 
+		free(m.Nxuiz[iii]);
+	free(m.Nxuiz);
+
+	free(m.Nxyuiz);
+	free(m.Nyuiz);
+	free(m.Nuiz);
+	free(m.Nz);
+
+	free(m.Ny);
+	free(m.Nxui);
+	free(m.Nx);
+	free(m.bridge);
+}
 
 bool isOnlyDouble(const char* str) {
     char* endptr = 0;
@@ -392,16 +425,16 @@ string zNameToString(Environment environment, vector<int> vec, int pos){
  */
 bool saveEdgesListAsTable(const Environment environment, const string filename){
 	
-	bool sortedPrint = true;
-
 	if(environment.isVerbose)
 		cout << "Saving edges file\n";
 	ofstream output;
 	output.open(filename.c_str());
 
-	if(sortedPrint){
-		vector<XJAddress*> allEdges;
+	bool sortedPrint = true;
 
+	if(sortedPrint){
+
+		vector<XJAddress*> allEdges;
 		for(int i = 0; i < environment.numNodes -1; i++){
 		 	for(int j = i + 1; j < environment.numNodes; j++){
 		 		XJAddress* s = new XJAddress();
@@ -437,6 +470,10 @@ bool saveEdgesListAsTable(const Environment environment, const string filename){
 		 	output << "\n";	
 
 		}
+
+		for(int i = 0; i < allEdges.size();i++){
+			delete allEdges[i];
+		}
 	} else{
 		output << "x" << "\t" << "y" << "\t" << "z.name" << "\t" << "ui.vect" << "\t" << "zi.vect" << "\t" 
 				<< "Ixy_ui" << "\t" << "cplx" << "\t" << "Rxyz_ui" << "\t" << "category" << "\t" << "Nxy_ui\n";
@@ -456,6 +493,8 @@ bool saveEdgesListAsTable(const Environment environment, const string filename){
 		}
 	}
 	output.close();
+
+	
 }
 
 /*
@@ -579,7 +618,7 @@ bool isInteger(const string &s)
 
  	const char * c = environment.inData.c_str();
 	ifstream input (c);
-	string lineData;
+	string lineData = "";
 
 	environment.numSamples = 0;
 	environment.numNodes = 0;
@@ -701,6 +740,7 @@ bool removeRowsAllNA(Environment& environment){
 		}
 	}
 	cout << "environment.numSamples :" << environment.numSamples << endl;
+	delete [] indexNA;
 	return true;
 }
 
@@ -787,8 +827,8 @@ bool parseCommandLine(Environment& environment, int argc, char** argv) {
 		environment.isPropagation = true;
 		environment.halfVStructures = 0;
 		environment.nThreads = 0;
-		cout << 	environment.sampleWeightsFile << endl;
 
+		environment.steps.clear();
 	}
 	
 	// parse the command line
@@ -1136,10 +1176,12 @@ bool readFilesAndFillStructures(Environment& environment, string slash){
 	ifstream input (c);
 	string lineData;
 	string s;
-	int row = 0;
-	int col = 0;
+
 	int posX = -1;
 	int posY = -1;
+
+	int row = 0;
+	int col = 0;
 
 	while(getline(input, lineData))
 	{

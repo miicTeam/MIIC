@@ -54,7 +54,6 @@ int computeInfoAndCplx( int *myNxyui, int *myDVect, int *myLevels, int *myVarIdx
 	int Nui;		            // Sum over X and Y for a {ui}
 	int Nxui;		            // Sum over Y of Nxyui
 	int Nyui;		            // Sum over X of Nxyui
-	int Nxyui;		            // Sum over X and Y of Nxyui
 	int NN = 0;		            // Sum over {ui} of Nui
 	
 	int tmpRescaleN;            // temp variable for rescaling the 'n' considering the effective sample size

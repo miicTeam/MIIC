@@ -29,9 +29,7 @@ int sign(double val){
 }
 
 bool getSStructure(Environment& environment, const int posX, const int posY, const int posZ, bool isVerbose, vector< vector<int> >& allTpl, vector<double>& allI3){
-	bool structFound = false;	
 	//// To check if xk belongs to the {ui} of the base
-	bool isXkInUi = false;
 
 	vector<int> u(environment.edges[posX][posZ].edgeStructure->ui_vect_idx);
 	if(environment.edges[posX][posZ].edgeStructure->ui_vect_idx.size() > 0){
@@ -39,7 +37,6 @@ bool getSStructure(Environment& environment, const int posX, const int posY, con
 		for(int i = 0; i < environment.edges[posX][posZ].edgeStructure->ui_vect_idx.size(); i++){
 			if(u[i] == posY){
 				u.erase(u.begin() + i);
-				isXkInUi = true;
 				break;
 			}
 		}
@@ -67,6 +64,8 @@ bool getSStructure(Environment& environment, const int posX, const int posY, con
 	Is = res[7];
 	Cs = res[8];
 
+	free(res);
+
 	if(environment.isK23){
 
 		if(environment.isDegeneracy){
@@ -75,8 +74,6 @@ bool getSStructure(Environment& environment, const int posX, const int posY, con
 
 		Is = Is + Cs;
 	} 
-
-	delete(res);
 	
 	
 
@@ -94,8 +91,6 @@ bool orientationProbability(Environment environment, string slash, bool isVerbos
 	std::stringstream ss;
 	ss.str("");
 	ss << environment.outDir << slash << "log.miic.orientProba.txt";
-
-	ExecutionTime execTime;
 
 	vector< vector<int> > allTpl;
 	vector<double> allI3;
@@ -224,8 +219,6 @@ bool orientationProbability(Environment environment, string slash, bool isVerbos
 
 	//Save the time spent on the algo (if the time for the skeleton already exists, copy the file, open and add before saving)
 	ss.str("");
-	//// Save the execTime
-	ss << environment.outDir << slash << "execTime.miic.skeleton.txt";
 
 	if(existsTest(ss.str())){
 		readTime(environment, ss.str());
@@ -287,6 +280,7 @@ bool orientationProbability(Environment environment, string slash, bool isVerbos
 
 	//delete
 	delete [] oneLineMatrixallTpl;
+	delete [] ptrRetProbValues;
 
 	//// Save the adjacency matrix
 	ss.str("");

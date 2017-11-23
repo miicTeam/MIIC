@@ -82,7 +82,7 @@ double* getAllInfoNEW( int* ptrAllData, int* ptrAllLevels, int* ptrVarIdx, int n
 	int randomrescaling=1;
 	float r,rr;
 
-	int bin_max=100,MDL=0, NML=1, TRUE=1, FALSE=0;
+	int bin_max=100,MDL=0, TRUE=1, FALSE=0;
 	int l,ok;
 	int **sample,**sortedSample,**Opt_sortedSample; //[N+1][7]
 
@@ -110,12 +110,12 @@ double* getAllInfoNEW( int* ptrAllData, int* ptrAllLevels, int* ptrVarIdx, int n
 
 	int* bridge = (*memory).bridge;
 
-	int bin,PBin,Prui,increment,NN,X,Y,Z;
+	int bin,PBin,Prui,increment,X,Y,Z;
 	int ptrzi,zi,z;
 
 	double NlogN,logN;
 
-	int Lxyuiz,Lxyui,Lyui,Lui;
+	int Lxyui,Lyui,Lui;
 	int  Nxyui,  Nyui,  Nui;
 	int  Nxyuis,  Nyuis,  Nuis;
 
@@ -160,9 +160,6 @@ double* getAllInfoNEW( int* ptrAllData, int* ptrAllLevels, int* ptrVarIdx, int n
 	double info_xui_z,info_yui_z,info_ui_z;
 	double logC_xui_z,logC_yui_z,logC_ui_z;
 
-	double test_xy_ui, info3, info2;
-
-
 	double info3xy_ui,info2xy_ui,info3xy_uiz,info2xy_uiz;
 	double info3xz_ui,info2xz_ui,info3yz_ui,info2yz_ui;
 	double logC3xy_ui,logC2xy_ui,logC3xy_uiz,logC2xy_uiz;
@@ -188,7 +185,7 @@ double* getAllInfoNEW( int* ptrAllData, int* ptrAllLevels, int* ptrVarIdx, int n
 	double k_xy_ui=-1.0,k_xy_ui_top,k_xy_uiz_top,k_xyz_ui_top;
 
 
-	int i, j, k, errCode = 0;	// for loops
+	int i, j, k;	// for loops
 
 	int nbrAllVar;
 	// Output pointer
@@ -229,9 +226,7 @@ double* getAllInfoNEW( int* ptrAllData, int* ptrAllLevels, int* ptrVarIdx, int n
 
 	Opt_dBin = (int **)malloc(nrow* sizeof(int*));
 	for(iii = 0; iii < nrow; iii++)
-	  Opt_dBin[iii] = (int *)malloc(ncol* sizeof(int));
-
-	int binX,binY;
+	Opt_dBin[iii] = (int *)malloc(ncol* sizeof(int));
 
 
 	// find samples without NA in x,y,ui and store their id in sample[k][0]
@@ -562,8 +557,6 @@ double* getAllInfoNEW( int* ptrAllData, int* ptrAllLevels, int* ptrVarIdx, int n
 			countmin=0;
 			min_info_logC = testinfo_xy_ui;
 		}
-
-		int p;
 		
 
 ///////////////////////////////////////////////////////////////////////
@@ -602,9 +595,6 @@ double* getAllInfoNEW( int* ptrAllData, int* ptrAllLevels, int* ptrVarIdx, int n
 		R_top=-LARGE;
 		NIxyz_ui_top = -1;
 		k_xyz_ui_top = -1;
-
-		int kkk;
-
 
 		for(zi=0; zi < nbrZi ; zi++ ){
 			// initialisation of bin numbers for continuous variable zi
@@ -1112,8 +1102,8 @@ double* getAllInfoNEW( int* ptrAllData, int* ptrAllLevels, int* ptrVarIdx, int n
 		free(dBin[i]);
 	free(dBin);
 
-	binX=Opt_dBin[0][0];
-	binY=Opt_dBin[0][1];
+	// binX=Opt_dBin[0][0];
+	// binY=Opt_dBin[0][1];
 	for(i=0; i<1;i++)
 		free(Opt_dBin[i]);
 	free(Opt_dBin);
@@ -1168,7 +1158,7 @@ void* evaluateZ(void* container) {
 
 	int randomrescaling=1;
 	float r,rr;
-	int bin_max=100,MDL=0, NML=1, TRUE=1, FALSE=0;
+	int MDL=0,FALSE=0, TRUE=1;
 
 	int z;
 	int k = 0, l = 0 ;
@@ -1816,7 +1806,7 @@ double* getAllInfoNEWThreads( int* ptrAllData, int* ptrAllLevels, int* ptrVarIdx
   
   /////////////////////////
 
-	int i, j, k, errCode = 0;	// for loops
+	int i, j, k;	// for loops
 
 	int nbrAllVar;
 
@@ -2341,7 +2331,18 @@ double* getAllInfoNEWThreads( int* ptrAllData, int* ptrAllLevels, int* ptrVarIdx
 		ptrRetValues[7] = NIxyz_ui_top;
 		ptrRetValues[8] = k_xyz_ui_top;
 
+		iterator -=1;
+		while(iterator >=0 ){
+			free(fromTo[iterator].dBin);
+			free(fromTo[iterator].Opt_dBin);
+			delete [] scoresAllZi[iterator];
+			iterator--;
 		}
+		delete [] fromTo;
+		free(pt);
+		delete [] scoresAllZi;
+		}
+	
 	}
 
 

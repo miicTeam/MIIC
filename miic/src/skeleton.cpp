@@ -27,13 +27,9 @@ bool skeleton(Environment& environment, string slash, clock_t startTimeWhole, in
 	strcpy(addr,ss.str().c_str());
 	Log* pLog = new Log(addr);
 
-
-	int** matrixOriginal = NULL; // used to save original values 
 	clock_t startTime;
 	stringstream log_shuffle;
 	log_shuffle.str("");
-
-	ExecutionTime execTime;
 
 	string outputFilePath;
 	string filePath;
@@ -114,6 +110,14 @@ bool skeleton(Environment& environment, string slash, clock_t startTimeWhole, in
 		saveAdjMatrix(environment, ss.str());
 		//adj.mat = saveEdgesListAsAdjMat( environment, myAllProp = colnames(gV$data), myOutputFilePath = outputFilePath )
 	}	
+
+	if(environment.nThreads > 1){
+		// delete meory space for thread execution
+		for(int i = 0; i < environment.nThreads; i++){
+			deleteMemorySpaceThreads(environment, environment.memoryThreads[i]);
+		}
+		delete [] environment.memoryThreads ;
+	}
 
 	return 0;
 }

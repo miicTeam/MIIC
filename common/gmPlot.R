@@ -124,10 +124,11 @@ if( file.exists( plotArg.list[["argSummary"]] ) == TRUE ){
     pdf(myPdfFile)
     layout(t(1:2), widths=c(5,1))
     # Set margins and turn all axis labels horizontally (with `las=1`)
-    par(mar=rep(.5, 4), oma=c(3,3,3,1), las=1)
+    par(mar=rep(1, 4), oma=c(3,3,3,1), las=1)
+
 
     plot(myGraph, layout = myLayout )
-    title( paste( "[", basename( plotArg.list[["argOutDir"]] ), "]" ), cex.main = 1 )  
+    title( basename( plotArg.list[["argOutDir"]]), cex.main = 1 )  
     
     legend_image <- as.raster(matrix(leg_colors, ncol=1))
     plot(c(0,5),c(-1,1),type = 'n', axes = F,xlab = '', ylab = '', main = 'Partial correlation', cex.main = 0.7)
@@ -150,9 +151,9 @@ if( file.exists( plotArg.list[["argSummary"]] ) == TRUE ){
     #layout(t(1:2), widths=c(5,2))
 
      # Set margins and turn all axis labels horizontally (with `las=1`)
-    par(mar=c(.5, .1,.5,.1), oma=c(3,3,3,1), las=1)
+    par(mar=rep(1, 4), oma=c(3,3,3,1), las=1)
     plot(myGraph, layout = myLayout )
-    title( paste( "[", basename( plotArg.list[["argOutDir"]] ), "]" ), cex.main = 1 )
+    title( basename( plotArg.list[["argOutDir"]]), cex.main = 1 )
 
     # Legend
     # Positive correlations
