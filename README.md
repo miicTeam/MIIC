@@ -5,7 +5,7 @@ MIIC (Multivariate Information Inductive Causation) learns a large class of caus
 Verny L., Sella N., Affeldt S., Singh PP., Isambert H.; Learning causal networks with latent variables from multivariate information in genomic data;  PLoS Comput. Biol., 2017.
 
 ## Useful links
-This code is inluded in the MIIC package for the R environment, available on CRAN, see https://cran.r-project.org/web/packages/miic/index.html.
+This code is inluded in the MIIC package for the R environment, available on CRAN, see https://CRAN.R-project.org/package=miic
 
 ## Getting Started
 Download or clone the project 
@@ -17,13 +17,13 @@ To run MIIC you need to install the R environment (see https://www.r-project.org
 ## Compiling
 The C++ code, present in the "src" folder can be compiled tipyng:
 ```
-cd ../MIIC/src
+cd MIIC/src
 make clean;make
 ```
 ## Running the test
 The execution of the MIIC algorithm must be done through the R environment using the miic.R source, present inside the folder "common". Here the code to run MIIC on the example data:
 ```
-cd ../MIIC/common
+cd MIIC/common
 Rscript miic.R -i ../data/alarm1000samples.txt -l ../data/alarmLayout.txt -t ../data/alarmTrueEdges.txt -s ../data/alarmStateOrder.tsv -o ../data/resultExec -n
 ```
 ## Documentation
