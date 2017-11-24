@@ -351,10 +351,8 @@ if( 3 %in% discoNetArg.list[["argSteps"]] )
     tmp_sum = read.table(tmp_sumFile, header=T, as.is=T, sep="\t", check.names = F)
     conf_col = rep(1, nrow( tmp_sum ) )
     isCut = rep(NA, nrow(tmp_sum))
-    tmp_sum = cbind(tmp_sum,conf_col,isCut)
+    tmp_sum = cbind(tmp_sum,'confidence_ratio'=conf_col,'isCut'=isCut)
 
-    tmp_sum = cbind(tmp_sum,conf_col)
-    colnames(tmp_sum) = c('x','y','type','ai','info','cplx','Nxy_ai','log_confidence','infOrt','trueOrt', 'isOrtOk', 'sign','partial_correlation','confidence_ratio')
     tmp_pval = read.table(tmp_pvalFile, header=T, as.is=T, sep="\t", check.names = F)
     tmp_pval[,"confidence_ratio"] = as.numeric(tmp_pval[,"confidence_ratio"])
     #tmp_pval = tmp_pval[which(tmp_pval[,3] <= discoNetArg.list[["argConfidenceRatio"]]), 3]
@@ -368,6 +366,7 @@ if( 3 %in% discoNetArg.list[["argSteps"]] )
         tmp_sum[which(tmp_sum[,"x"]==tmp_pval[r,"x"] & tmp_sum[,"y"]==tmp_pval[r,"y"]),'isCut']='Y'
       }
     }
+
     tmp_sum = tmp_sum[,c('x','y','type','ai','info','cplx','Nxy_ai','log_confidence','confidence_ratio','infOrt','trueOrt', 'isOrtOk', 'sign','partial_correlation','isCut')]
     write.table(tmp_sum,tmp_sumFile, col.names=T, row.names=T, sep='\t',quote=F)
     rm(tmp_sum); rm(tmp_pval)
@@ -416,7 +415,7 @@ if( 4 %in% discoNetArg.list[["argSteps"]] )
 
     if( length( discoNetArg.list[["argLayout"]] ) > 0 ){ currCmd = paste( currCmd, ' -l ', discoNetArg.list[["argLayout"]], sep='' ) }
     if( discoNetArg.list[["argLatent"]] == TRUE ){ currCmd = paste( currCmd, ' -h ', sep='' ) }
-    #print(paste("COMMAND PLOT:" , currCmd))
+    print(paste("COMMAND PLOT:" , currCmd))
     # Call the script
     system( currCmd )
   }

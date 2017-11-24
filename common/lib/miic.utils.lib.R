@@ -243,10 +243,9 @@ checkInput <- function(dataFile, method, data){
 	errCode = "0"
 	isCnt_test = 0
 	
-
 	str = readChar(dataFile, file.info(dataFile)$size)
 	str_names = unlist(strsplit(str,"\n"))[1]
-	if(grepl("#", str) | grepl("&", str) | grepl("<", str_names) | grepl(">", str_names) | grepl("\"", str) | grepl("'", str)){
+	if(grepl("#", str) | grepl("&", str) | grepl("<", str_names) | grepl(">", str_names) | grepl("\"", str) | grepl("'", str) | nrow(data) < 2 | ncol(data) < 2 ){
 		errCode = "111"
 	}
 	else{
@@ -264,21 +263,24 @@ checkInput <- function(dataFile, method, data){
 
 checkTrueEdges <- function(edgesFile, inputData.df){
 	errCode = "0"
-	if( !file.exists(edgesFile) ){errCode="020"}
-	else{
-		str = readChar(edgesFile, file.info(edgesFile)$size)
-		if(grepl("#", str) | grepl("&", str) | grepl("<", str) | grepl(">", str) | grepl("\"", str) | grepl("'", str)){
-			errCode = "121"
-		}
-		else {
-			data = try( read.table(edgesFile, header=F, as.is=F, sep='\t', check.names = F) )
-			if(class(data) == "try-error"){errCode = "021"}
-			else if(ncol(data) != 2 & ncol(data) != 3){errCode = "023"}	
-			else if(length(which(!c(as.vector(data[,1]), as.vector(data[,2])) %in% colnames(inputData.df))) > 0){
+	data = try( read.table(edgesFile, header=F, as.is=F, sep='\t', check.names = F) )
+	if(class(data) == "try-error"){errCode = "021"}
+	else {
+		if( !file.exists(edgesFile) ){errCode="020"}
+		else{
+			str = readChar(edgesFile, file.info(edgesFile)$size)
+			if(grepl("#", str) | grepl("&", str) | grepl("<", str) | grepl(">", str) | grepl("\"", str) | grepl("'", str) | nrow(data) < 2 | ncol(data) < 2){
+				errCode = "121"
+			}
+			else {
+				
+				if(ncol(data) != 2 & ncol(data) != 3){errCode = "023"}	
+				else if(length(which(!c(as.vector(data[,1]), as.vector(data[,2])) %in% colnames(inputData.df))) > 0){
 
-				print(colnames(inputData.df))
+					print(colnames(inputData.df))
 
-				errCode = "025"}
+					errCode = "025"}
+			}
 		}
 	}
 		
@@ -287,22 +289,23 @@ checkTrueEdges <- function(edgesFile, inputData.df){
 
 checkLayout <- function(layoutFile){
 	errCode = "0"
-	if( !file.exists(layoutFile) ){errCode="030"}
+	data = try(read.table(layoutFile, header=F, as.is=T, sep='\t', check.names = F) )
+	if( class(data) == "try-error" ){errCode = "031"}
 	else{
-		str = readChar(layoutFile, file.info(layoutFile)$size)
-		if(grepl("#", str) | grepl("&", str) | grepl("<", str) | grepl(">", str) | grepl("\"", str) | grepl("'", str)){
-			errCode = "131"
-		}
+		if( !file.exists(layoutFile) ){errCode="030"}
 		else{
-			data = try(read.table(layoutFile, header=F, as.is=T, sep='\t', check.names = F) )
-			if( class(data) == "try-error" ){errCode = "031"}
+			str = readChar(layoutFile, file.info(layoutFile)$size)
+			if(grepl("#", str) | grepl("&", str) | grepl("<", str) | grepl(">", str) | grepl("\"", str) | grepl("'", str) | nrow(data) < 2 | ncol(data) < 2){
+				errCode = "131"
+			}
 			else{
-				if( ncol(data) != 2 & ncol(data) != 3  ){errCode = "033"}
-	      else {
-	  			if(ncol(data) == 2){
-	  			  if(!is.numeric(data[,1]) | !is.numeric(data[,2]) ){errCode = "034"}
-	  			} else if(ncol(data) == 3 & (!is.numeric(data[,2]) | !is.numeric(data[,3]) ) ) {errCode = "038"}
-	      }
+				
+					if( ncol(data) != 2 & ncol(data) != 3  ){errCode = "033"}
+		      else {
+		  			if(ncol(data) == 2){
+		  			  if(!is.numeric(data[,1]) | !is.numeric(data[,2]) ){errCode = "034"}
+		  			} else if(ncol(data) == 3 & (!is.numeric(data[,2]) | !is.numeric(data[,3]) ) ) {errCode = "038"}
+		      }
 			}
 		}
 	}
@@ -311,20 +314,22 @@ checkLayout <- function(layoutFile){
 
 checkStateOrder <- function(stateOrderFile,inData){
 	errCode = "0"
-	if( !file.exists(stateOrderFile) ){errCode="040"}
-	else{
-		str = readChar(stateOrderFile, file.info(stateOrderFile)$size)
-		str_names = unlist(strsplit(str,"\n"))[1]
-		if(grepl("#", str) | grepl("&", str) | grepl("<", str_names) | grepl(">", str_names) | grepl("\"", str) | grepl("'", str)){
-			errCode = "141"
-		} else{
-			data = try(read.table(stateOrderFile, header=T, as.is=T, sep='\t', check.names = F))
-			if( class(data) == "try-error" ){errCode = "041"}
-			else {
+	data = try(read.table(stateOrderFile, header=T, as.is=T, sep='\t', check.names = F))
+	if( class(data) == "try-error" ){errCode = "041"}
+	else {
+		if( !file.exists(stateOrderFile) ){errCode="040"}
+		else{
+			str = readChar(stateOrderFile, file.info(stateOrderFile)$size)
+			str_names = unlist(strsplit(str,"\n"))[1]
+			if(grepl("#", str) | grepl("&", str) | grepl("<", str_names) | grepl(">", str_names) | grepl("\"", str) | grepl("'", str) | nrow(data) < 2 | ncol(data) < 2){
+				errCode = "141"
+			} else{
+				
 				rownames(data) = data[,"var_names"]
 				myVariables = rownames(data)
 
 				if( ncol(data) != 2  & ncol(data) != 3){errCode = "043"}
+				
 			}
 		}
 	}
@@ -347,7 +352,7 @@ errorCodeToString <- function(error_code){
 
 	errorList3 = list(
 		'0' = "does not exist", 
-		'1' = "is not readable, check the file format. Special characters like #,&amp;,<,> are not allowed.",
+		'1' = "is not readable, check the file format. Data must be tab(\\t) separated. Special characters like #, &, <(not allowed only in column names), >(not allowed only in column names) are not allowed.",
 		'2' = "has rownames, please remove them",
 		'3' = "should have exactly two columns",
 		'4' = "should be numerical",
